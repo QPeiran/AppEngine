@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    // node.js
+    const API_URL = 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cat';
+    function GetCG(){
+    fetch(API_URL)
+    .then(response => response.json())
+    .then(function (json) {
+        var image = document.createElement('img');
+        image.src = json.data.image_url;
+        document.body.appendChild(image);
+        //console.log(json.data.image_url);
+      })
+    }
+    </script>
+  </head>
+
+<body>
+
+<h2>Guess what I am doing</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = GetCG()">
+Click me to display Cat memes.</button>
+
+
+
+</body>
+</html>
