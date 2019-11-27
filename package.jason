@@ -1,0 +1,20 @@
+{
+  "name": "appengine-scanning-database",
+  "description": "Scanny Web App deploying on Google App Engine Standard Environment.",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Peiran Quan",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "start": "node backend.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
